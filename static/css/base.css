@@ -1,0 +1,74 @@
+/* 
+Aaron Whitaker
+10/7/2022
+CRN: 10235
+CIS 226: Advanced Python Programming
+*/
+header h1 a {
+     color: red; 
+    }
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0 0 10px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #07b1bc;
+}
+h1 {
+    color: #07b1bc;
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+p {
+    color: #000000;
+    padding: 0px;
+    font-size: 20px;
+    text-align: left;
+}
+a {
+    color: #0b7a85;
+    padding-top: 0px;
+}
+
+img {
+    object-fit: scale-down;
+    padding: 3px;
+}
+
+strong {
+    color: #16352d;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-left {
+    color:rgb(209, 219, 216);
+    margin-right: auto;
+}
+
+.nav-right {
+    color:rgb(209, 219, 216);
+    float: right;
+}
+
+.post-entry{
+    margin-bottom: 2rem;
+    color: rgb(16, 91, 68);
+}
+
+.post-entry h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0;
+    color:rgb(37, 55, 50)
+}

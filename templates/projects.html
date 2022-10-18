@@ -1,0 +1,20 @@
+{% extends 'base.html' %} 
+{#Aaron Whitaker#}
+{#10/7/2022#}
+{#CRN: 10235#}
+{#CIS 226: Advanced Python Programming#}
+{% block header %}
+<h1>Favorite Generation</h1>
+{% endblock header%}
+{% block content %}
+<div class="container py-4">
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h2 class="display-5 fw-bold">Jawbreaker</h2>
+        <img src="{{ url_for('static', filename='images/jawbreaker.png') }}" alt="Jawbreaker" align="middle" width="100%">
+        <p class="col-md-8 fs-4" style="color: #000000">Photo of a Retro spaceship orbiting a planet with rings of multicolored lighting.</p>
+
+      </div>
+    </div>
+</div>
+{% endblock content %}

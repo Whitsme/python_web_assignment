@@ -1,0 +1,121 @@
+
+{% extends 'base.html' %} 
+{#Aaron Whitaker#}
+{#10/7/2022#}
+{#CRN: 10235#}
+{#CIS 226: Advanced Python Programming#}
+
+{% block header %}<h1>Welcome.</h1>{% endblock header %} 
+
+{% block content %}
+<div class="container py-4">
+    <div class="p-3 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Whos Art Is It Anyways</h1>
+        <p class="col-md-8 fs-4" style="color: #000000">Is it mine for inputting the text or is it theirs for generating the image?</p>
+      </div>
+    </div>
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Dalle Generations</h2>
+          <p style="color: #ffffff">In playing around with the Dalle II AI image generator, it's produces some interesting and sometimes spectacular work. Text prompts are listed.</p>
+          <img src="{{ url_for('static', filename='images/star.png') }}" alt="Star Trekish" align="middle" width="100%">
+          <p style="color: #ffffff">spaceship entering a wormhole in space, synthwave style, digital art, minimalist</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <div>
+            <h2>AI and I Images</h2>
+            <div class="bd-example">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Blast
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="{{ url_for('static', filename='images/blast.png') }}" alt="Blast" align="middle" width="100%">
+                    <a>Photo of a Retro spaceship orbiting a planet with rings of multicolored lighting.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Waiter
+                  </button>
+                </h4>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="{{ url_for('static', filename='images/waiter_s.png') }}" alt="Waiter" align="middle" width="100%">
+                    <a>cat flying a restaurant in space with stars and a galaxy in the background, digital art</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Portal
+                  </button>
+                </h4>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="{{ url_for('static', filename='images/portal.png') }}" alt="Portal" align="middle" width="100%">
+                    <a>baroque painting of a circular doorway overlooking the solar system, synthwave style, digital art</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Thinker
+                  </button>
+                </h4>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="{{ url_for('static', filename='images/thinker.png') }}" alt="Thinker" align="middle" width="100%">
+                    <a>epic baroque painting of space, synthwave style</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Disco 
+                  </button>
+                </h4>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="{{ url_for('static', filename='images/disco_s.png') }}" alt="Thinker" align="middle" width="100%">
+                    <a>raccoon disco, digital art</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Wheel 
+                  </button>
+                </h4>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img src="{{ url_for('static', filename='images/wheel.png') }}" alt="Wheel" align="middle" width="100%">
+                    <a>spaceship entering a wormhole in space, synthwave style, digital art</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+{% endblock content%}
+
+
+
